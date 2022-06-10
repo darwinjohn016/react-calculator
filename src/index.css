@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif,'Font Awesome 6 Free','Font Awesome 6 Brands';
+}
+
+html,body{
+  height: 100%;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1{
+  font-size: clamp(2rem,5vw,2.5rem);
+}
+
+h2{
+  font-size: clamp(1.7rem,5vw,2.2rem);
+}
+
+h3{
+  font-size: clamp(1.4rem,5vw,1.9rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  line-height: 1.1;
+  max-width: 75ch;
+}
+
+p{
+  max-width: 75ch;
+  font-size: clamp(0.9rem,5vw,1rem);
+  font-weight: lighter;
+}
+
+a,
+button,
+label,
+input{
+  font-size: clamp(1rem,5vw,1.1rem);
+}
+
+button{
+  cursor: pointer;
+  padding: 0.6rem 0.9rem;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  padding: 0.6rem 0.9rem;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .history{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(90%,400px);
+    margin: 0 auto;
+    background-color: red;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
